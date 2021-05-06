@@ -257,6 +257,8 @@ title("Melting Temperature vs. Depth Below Surface")
 xlabel("Melting Temperature (K)")
 ylabel("Depth Below Surface (km)")
 
+%Heat Diffusion Equation
+
 % vectors
 T_Start=200*size(1,[Height_list]);      %Starting Temp.
 Phi_Start=0*size(1,[Height_list]);      %Porosity Start
