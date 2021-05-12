@@ -122,13 +122,6 @@ maxT=400;
 T1 = [minT:maxT]; %temperature range
 P1 = [minP:maxP]; %pressure range
 out = SF_WhichPhase({minP:stepP:maxP,minT:maxT});   
-
-% imagesc(minT:maxT,minP:maxP,out);
-% ylabel('Pressure (MPa)')
-% xlabel('Temperature (K)')
-% hcb=colorbar;
-% title(hcb,'Ice Phase')
-% figure;
  
  
 nT1=repmat(T1,231,1);
@@ -141,18 +134,6 @@ nP1=reshape(repmat(P1_short',201,1)', 231,201);
  
 mP=nP1(find(out==0));
  
-% scatter(mT,mP);
-% ylabel('Pressure (MPa)')
-% xlabel('Temperature (K)')
-% title('Melting Points for Water')
-% hold on
-
-%Get melting points of that pressure
- 
-%Psimple=round(P,-1)
-%plot(mT,Psimple,'r*')
-
-%plot(mT,Pressure,'r*');
  
 tol = 5;
 MeltingTemps=mT(abs(mP-Pressure(i)) < tol);
