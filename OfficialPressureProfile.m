@@ -358,7 +358,7 @@ plot((-[Height_list]), [Melting_Temperature_list])
 %xlim([0 2.3e9])  
 xlabel('Height( km)')
 ylabel('Melting Temperature (K)')
-ylim([240 360])
+ylim([200 400])
 hold on 
 
 yyaxis right 
@@ -366,7 +366,7 @@ plot((-[Height_list]), [T_new])
 %xlim([0 2.3e9])  
 xlabel('Height (km)')
 ylabel('Temperature In Glacier (K)')
-ylim([240 360])
+ylim([200 400])
 %plot(x,y)
 
 
