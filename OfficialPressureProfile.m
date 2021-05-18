@@ -231,7 +231,7 @@ xlabel("Pressure (MPa)")
 ylabel("Depth Below Surface (km)")
 subplot(2,3,2)
 plot(Phase_list,-Height_list,'LineWidth',2)
-title("Phase vs. Depth Below Surface")
+title("Phase vs. Depth Below Surface at Time=T0")
 xlabel("Ice Phase")
 ylabel("Depth Below Surface (km)")
 xlim([0 7])
@@ -311,6 +311,13 @@ for i=dt:dt:100000*dt
     Phi_Start=Phi_new';
     
 end
+
+figure
+plot(Phase_list,-Height_list,'LineWidth',2)
+title("Phase vs. Depth Below Surface Final at Time=T")
+xlabel("Ice Phase")
+ylabel("Depth Below Surface (km)")
+xlim([0 7])
 
 % plots
 figure
