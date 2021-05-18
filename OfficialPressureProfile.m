@@ -295,7 +295,7 @@ for i=dt:dt:100000*dt
     count=count+1;
     
     if rem(count,1000)==0
-         [k_i,rho_i,c_i,Tm]=SeaFreezeCall(T_Start,Pressure_list);
+         [k_i,rho_i,c_i,Tm,Phase_list]=SeaFreezeCall(T_Start,Pressure_list);
          
     hold_temps=[hold_temps T_new];
     hold_phi=[hold_phi Phi_new];
