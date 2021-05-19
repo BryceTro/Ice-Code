@@ -19,6 +19,7 @@ dd= reshape(d,101,[]);
 dd=dd/1000
 imagesc([1e-4:1e-4:7e-4],[0:.01:1]*100, dd)
 caxis([0 225]) %use line for narrowing results
+colorbar
 xlabel('Water Mass Fraction (%)')
 ylabel('Surface Area Covered with Ice/Water (%)')
 title('Uniform Ice/Water Thickness (km)')
