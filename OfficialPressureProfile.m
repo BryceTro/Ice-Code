@@ -7,7 +7,7 @@ tic
  
 addpath('C:\Users\Bryce Troncone\Desktop\Matlab Folder\SeaFreeze-master\SeaFreeze-master\Matlab')
 
-%Only need to input these three values and calculates everything else
+%Only need to input these three values and calculates everything else, except if you want to change heat flow, surface temperature, and timescale
 
 start_height=1;
 resolution=1;
