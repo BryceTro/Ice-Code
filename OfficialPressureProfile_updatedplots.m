@@ -11,7 +11,7 @@ addpath('C:\Users\Bryce Troncone\Desktop\Matlab Folder\SeaFreeze-master\SeaFreez
 
 T_surf=235; %Surface Temp
 Base_Flux=100/1000;  %W/m^2
-dt=86400*365.25*1000; %*1=1,000,000 year timescale; *100=10,000,000 year timescale,*1000=100,000,000 timescale etc. 
+dt=86400*365.25*1000; %*10=1,000,000 year timescale; *100=10,000,000 year timescale,*1000=100,000,000 timescale etc. 
 start_height=1; %in km
 resolution=1;   %in km
 final_height=80; %in km
