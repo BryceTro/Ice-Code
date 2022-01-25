@@ -120,14 +120,7 @@ while depth <= matrix_dimension
         top=depth;
     elseif phi_np1_km1(depth) > 0
         test=phi_np1_km1(top);
-         val = test;
-      if isinteger(val) == 0   
-          close all;
-          errordlg('Input a Smaller Resolution','Full Melt Possibly Occured');    
-      waitfor(0);
-      error('Breaking out of function');
-      Timeout
-      end
+        
         while test > 0
             T_hold=T_hold+T_np1_km1(top+size);
             size=size+1;
