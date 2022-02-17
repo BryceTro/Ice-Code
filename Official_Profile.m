@@ -5,6 +5,7 @@ close all;
 clear all;
 
 addpath('C:\Users\Bryce Troncone\Desktop\Matlab Folder\SeaFreeze-master\SeaFreeze-master\Matlab')
+load('Latent_Heat_Lookup.mat')
 
 global start_height
 global resolution
@@ -341,8 +342,8 @@ for time=[dt:dt:1000*dt]
     test2(:,ss)  = Evolve_Phase_list';
    end
    
-       [T_new,Phi_new]=HP_Ice_Evolve_v3(T_Start,Phi_Start,k_i,rho_i,c_i,k_w,rho_w,...
-    c_w,dt,dz,T_surf,Base_Flux,Tm,L,TTol,PhiTol);
+       [T_new,Phi_new]=HP_Ice_Evolve_v4(T_Start,Phi_Start,k_i,rho_i,c_i,k_w,rho_w,...
+    c_w,dt,dz,T_surf,Base_Flux,Tm,TTol,PhiTol,Pressure_list,Latent_Heat_Lookup);
 
     % redefine T_start & Phi_Start for next time loop  
     T_Start=T_new';
