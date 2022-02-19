@@ -24,7 +24,7 @@ TErr=999;
 PhiErr=999;
 
 while  TErr>TTol || PhiErr>PhiTol
-    counter=counter+1
+    counter=counter+1;
 
 %% Enthalpy Method
 Hs=c_i.*Tm;     % enthalpy of solid ice to compare in enthalpy method
